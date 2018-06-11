@@ -1,181 +1,125 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-* {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    background-repeat: no-repeat;
-}
-
-/* Menu */
-
-#menu {
-    background-image: url("images/Menu.png");
-    background-position: center bottom;
-    background-size: 600px 600px;
-    background-repeat: no-repeat;
-    height: 750px;
-    width: 450px;
-}
-
-#menu_head {
-    padding: 1%;
-    margin: 3% 15% 0% 15%;
-    width: 70%;
-    font-size: 140%;
-    border: 3px solid #080808;
-    background: linear-gradient(top, #129799 0%, #626262 100%);
-    background: -webkit-linear-gradient(top, #129799 0%, #626262 100%);
-}
-
-#level_1, #level_2, #level_3, #level_4, #level_5, #zufall {
-    color: white;
-    padding: 1%;
-    margin: 0.5%;
-    width: 240px;
-    border: 3px solid #080808;
-    font-size: 140%;
-    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
-    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-}
-
-
-/* Game Table */
-
-
-#gameTable {
-    border-collapse: collapse;
-    width: 100%;
-    height: 100%;
-    background-color: #626262;
-}
-
-th {
-    background: linear-gradient(top, #129799 0%, #626262 100%);
-    background: -webkit-linear-gradient(top, #129799 0%, #626262 100%);
-    border: 1px solid black;
-}
-
-td {
-    /*width: 58%;
-    height: 58%;*/
-    background-position: center center;
-    border: 1px solid black;
-    background-repeat: no-repeat;
-}
-
-#back {
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* Gameover */
-
-
-#gameover {
-    background-image: url("images/Menu.png");
-    background-position: center bottom;
-    background-size: 600px 600px;
-    background-repeat: no-repeat;
-    height: 750px;
-    width: 450px;
-}
-#gameover_head {
-    text-align: center;
-    padding: 1%;
-    margin: 3% 15% 0% 15%;
-    width: 70%;
-    font-size: 140%;
-    border: 3px solid #080808;
-    background: linear-gradient(top, #129799 0%, #626262 100%);
-    background: -webkit-linear-gradient(top, #129799 0%, #626262 100%);
-}
-#gameoverText {
-    text-align: center;
-    padding: 1%;
-    margin: 3% 15% 0% 15%;
-    width: 70%;
-    font-size: 140%;
-}
-
-#menuGameover, #nextGameover {
-    color: white;
-    padding: 1%;
-    margin: 3% 15% 0% 15%;
-    width: 70%;
-    border: 3px solid #080808;
-    font-size: 140%;
-    background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
-    background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
-}
-
-/* Smartphone */
-
-
-@media screen and (max-height: 750px) {
     body, html {
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         margin: 0;
+        padding: 0;
     }
 
-    /* Menu */
+@media all and (orientation:landscape) {
+   #device {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+    #gameover {
+        display: none;
+    }
+    #message {
+        display: none;
+    }
+    #gameTable {
+        display: none;
+    }
 
+}
+
+@media all and (orientation:portrait) {
+
+    #device {
+        display: none;
+    }
+}
+
+    /* Device */
+    #device {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-color: #080808;
+        background-image: url("images/device.png");
+        background-position: center center;
+    }
+
+
+    /* Menu */
     #menu {
         background-image: url("images/Menu.png");
         background-position: center bottom;
-        background-size: 600px 600px;
         background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
+        background-size: 100%;
+        height: 100vh;
+        width: 100vw;
     }
 
     #menu_head {
-        padding: 1%;
-        margin: 3% 15% 0% 15%;
-        width: 70%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 0.5%;
+        margin: 0%;
         border: 3px solid #080808;
-        font-size: 140%;
-        background: linear-gradient(top, #129799 0%, #626262 100%);
-        background: -webkit-linear-gradient(top, #129799 0%, #626262 100%);
+        font-size: 200%;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #0b7499 0%, #626262 100%);
+        background: -webkit-linear-gradient(top, #0b7499 0%, #626262 100%);
     }
 
-    #level_1, #level_2, #level_3, #level_4, #level_5, #zufall {
-        color: white;
+    .button:nth-child(even) {
+        color: #FFFFFF;
         padding: 1%;
-        margin: 0.5% 20% 0.5% 20%;
-        width: 60%;
+        margin: 0.5% 5% 0.5% 2.5%;
+        width: 42.5%;
         border: 3px solid #080808;
-        font-size: 140%;
+        font-size: 150%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
         background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
         background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
     }
 
+    .button:nth-child(odd) {
+        color: #FFFFFF;
+        padding: 1%;
+        margin: 0.5% 2.5% 0.5% 5%;
+        width: 42.5%;
+        border: 3px solid #080808;
+        font-size: 150%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    }
 
     /* Game Table */
-
     #gameTable {
         border-collapse: collapse;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         background-color: #626262;
     }
 
+    #text {
+        color: #FFFFFF;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    }
+
     th {
-        background: linear-gradient(top, #129799 0%, #626262 100%);
-        background: -webkit-linear-gradient(top, #129799 0%, #626262 100%);
+        background: linear-gradient(top, #0b7499 0%, #626262 100%);
+        background: -webkit-linear-gradient(top, #0b7499 0%, #626262 100%);
+        font-size: 140%;
         border: 1px solid black;
     }
 
     td {
         background-position: center center;
         background-repeat: no-repeat;
+        border: 1px solid black;
     }
 
     #back {
@@ -184,79 +128,548 @@ td {
     }
 
     /* Gameover */
-
-
     #gameover {
-        background-image: url("images/Menu.png");
-        background-position: center bottom;
-        background-size: 600px 600px;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        top: 25%;
+        left: 7.5%;
+        right: 0;
+        bottom: 0;
+        border: 3px solid #FFFFFF;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        height: 50%;
+        width: 85%;
     }
-}
 
+    #menuGameover {
+        position: absolute;
+        border: 3px solid #080808;
+        font-size: 140%;
+        top: 70%;
+        left: 50%;
+        margin: 0% 0% 5% 0%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
 
+    #nextGameover {
+        position: absolute;
+        display: none;
+        width: 70%;
+        border: 3px solid #080808;
+        font-size: 140%;
+        top: 85%;
+        left: 50%;
+        margin: 2% 0% 5% 0%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
 
+    #restartGameover {
+        position: absolute;
+        display: none;
+        border: 3px solid #080808;
+        font-size: 140%;
+        width: 70%;
+        top: 85%;
+        left: 50%;
+        margin: 2% 0% 5% 0%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #gameoverText {
+        position: absolute;
+        text-align: center;
+        padding: 1%;
+        top: 50%;
+        left: 50%;
+        width: 70vw;
+        font-size: 140%;
+        color: #FFFFFF;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        /*    background: linear-gradient(top, #ffffff 0%, #626262 100%);
+            background: -webkit-linear-gradient(top, #ffffff 0%, #626262 100%);*/
+        border: 3px solid #080808;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #gameover_head {
+        position: absolute;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 300%;
+        color: #FFFFFF;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        font-weight: bold;
+        top: 20%;
+        left: 50%;
+        webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #message {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        top: 35%;
+        left: 7.5%;
+        right: 0;
+        bottom: 0;
+        border: 3px solid #FFFFFF;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        height: 30%;
+        width: 85%;
+    }
+
+    #messageText {
+        position: absolute;
+        text-align: center;
+        padding: 1%;
+        top: 25%;
+        left: 50%;
+        width: 70vw;
+        font-size: 140%;
+        color: #FFFFFF;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #messageNext {
+        border: 3px solid #080808;
+        font-size: 140%;
+        width: 50%;
+        margin: 40% 25% 5% 25%;
+        border-radius: 20px;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+        background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+        background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+    }
+
+    .win {
+        background: linear-gradient(top, #22a34f 0%, #196220 100%);
+        background: -webkit-linear-gradient(top, #22a34f 0%, #196220 100%);
+    }
+
+    .loose {
+        background: linear-gradient(top, #a3262d 0%, #622f2e 100%);
+        background: -webkit-linear-gradient(top, #a3262d 0%, #622f2e 100%);
+    }
 
 
 /* pictures for the tiles */
 
+/* objects */
 
 .shipbuilder_north {
     background-size: 100%;
     background-image: url("images/up.png");
+    /*background-image: url("images/objects/start_top.png");*/
 }
 
 .shipbuilder_east {
     background-size: 100%;
     background-image: url("images/right.png");
+    /*background-image: url("images/objects/start_right.png");*/
 }
 
 .shipbuilder_south {
     background-size: 100%;
     background-image: url("images/down.png");
+    /*background-image: url("images/objects/start_down.png");*/
 }
 
 .shipbuilder_west {
     background-size: 100%;
     background-image: url("images/left.png");
+    /*background-image: url("images/objects/start_left.png");*/
 }
 
 .shipbuilder_center {
     background-size: 100%;
     background-image: url("images/ship_start.png");
+    /*background-image: url("images/objects/ship_start.png");*/
 }
 
 .back {
     background-size: 100%;
     background-image: url("images/back.png");
+    /*background-image: url("images/objects/back.png");*/
 }
+
+/*water_fog*/
 
 .water {
     background-size: 100%;
     background-image: url("images/wasser.png");
+    /*background-image: url("images/water_fog/water.png");*/
 }
 
 .water_miss {
     background-size: 100%;
     background-image: url("images/wasser_getroffen_weiss.png");
+    /*background-image: url("images/water_fog/water_getroffen_weiß.png");*/
+}
+
+.water_hit {
+    background-size: 100%;
+    /*background-image: url("images/water_fog/water_getroffen_rot.png");*/
 }
 
 .fog {
     background-size: 100%;
     background-image: url("images/nebel.png");
+    /*background-image: url("images/water_fog/nebel.png");*/
 }
 
 .fog_miss {
     background-size: 100%;
     background-image: url("images/nebel_getroffen_weiss.png");
+    /*background-image: url("images/water_fog/nebel_getroffen_weiß.png");*/
 }
 
 .fog_hit {
     background-size: 100%;
     background-image: url("images/nebel_getroffen_rot.png");
+    /*background-image: url("images/water_fog/nebel_getroffen_rot.png");*/
 }
+
+/* powerups */
+
+.powerup_water {
+    background-size: 100%;
+    background-image: url("images/powerups/wasser_powerup.png");
+}
+
+.powerup_water_hit {
+    background-size: 100%;
+    background-image: url("images/powerups/wasser_powerup_rot.png");
+}
+
+.powerup_fog {
+    background-size: 100%;
+    background-image: url("images/powerups/nebel_powerup.png");
+}
+
+.powerup_fog_hit {
+    background-size: 100%;
+    background-image: url("images/powerups/nebel_powerup_rot.png");
+}
+
+/* ships */
+
+/* two */
+.ship_2_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_hinten.png");
+}
+
+.ship_2_horizontal_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_hinten_getroffen.png");
+}
+
+.ship_2_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_vorne.png");
+}
+
+.ship_2_horizontal_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_horizontal_vorne_getroffen.png");
+}
+
+.ship_2_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_hinten.png");
+}
+
+.ship_2_vertical_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_hinten_getroffen.png");
+}
+
+.ship_2_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_vorne.png");
+}
+
+.ship_2_vertical_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/two/boot2_vertikal_vorne_getroffen.png");
+}
+
+/* three */
+
+.ship_3_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_hinten.png");
+}
+
+.ship_3_horizontal_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_hinten_getroffen.png");
+}
+
+.ship_3_horizontal_middel {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_mitte.png");
+}
+
+.ship_3_horizontal_middel_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_mitte_getroffen.png");
+}
+
+.ship_3_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_vorne.png");
+}
+
+.ship_3_horizontal_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_horizontal_vorne_getroffen.png");
+}
+
+.ship_3_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_hinten.png");
+}
+
+.ship_3_vertical_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_hinten_getroffen.png");
+}
+
+.ship_3_vertical_middel {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_mitte.png");
+}
+
+.ship_3_vertical_middel_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_mitte_getroffen.png");
+}
+
+.ship_3_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_vorne.png");
+}
+
+.ship_3_vertical_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/three/uboot3_vertikal_vorne_getroffen.png");
+}
+
+/* four */
+
+.ship_4_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_hinten.png");
+}
+
+.ship_4_horizontal_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_hinten_getroffen.png");
+}
+
+.ship_4_horizontal_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte1.png");
+}
+
+.ship_4_horizontal_middel_1_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte1_getroffen.png");
+}
+
+.ship_4_horizontal_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte2.png");
+}
+
+.ship_4_horizontal_middel_2_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_mitte2_getroffen.png");
+}
+
+.ship_4_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_vorne.png");
+}
+
+.ship_4_horizontal_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_horizontal_vorne_getroffen.png");
+}
+
+.ship_4_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_hinten.png");
+}
+
+.ship_4_vertical_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_hinten_getroffen.png");
+}
+
+.ship_4_vertical_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte1.png");
+}
+
+.ship_4_vertical_middel_1_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte1_getroffen.png");
+}
+
+.ship_4_vertical_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte2.png");
+}
+
+.ship_4_vertical_middel_2_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_mitte2_getroffen.png");
+}
+
+.ship_4_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_vorne.png");
+}
+
+.ship_4_vertical_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/four/boot4_vertikal_vorne_getroffen.png");
+}
+
+/* five */
+
+.ship_5_horizontal_back {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_hinten.png");
+}
+
+.ship_5_horizontal_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_hinten_getroffen.png");
+}
+
+.ship_5_horizontal_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte1.png");
+}
+
+.ship_5_horizontal_middel_1_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte1_getroffen.png");
+}
+
+.ship_5_horizontal_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte2.png");
+}
+
+.ship_5_horizontal_middel_2_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte2_getroffen.png");
+}
+
+.ship_5_horizontal_middel_3 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte3.png");
+}
+
+.ship_5_horizontal_middel_3_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_mitte3_getroffen.png");
+}
+
+.ship_5_horizontal_front {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_vorne.png");
+}
+
+.ship_5_horizontal_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_horizontal_vorne_getroffen.png");
+}
+
+.ship_5_vertical_back {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_hinten.png");
+}
+
+.ship_5_vertical_back_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_hinten_getroffen.png");
+}
+
+.ship_5_vertical_middel_1 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte1.png");
+}
+
+.ship_5_vertical_middel_1_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte1_getroffen.png");
+}
+
+.ship_5_vertical_middel_2 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte2.png");
+}
+
+.ship_5_vertical_middel_2_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte2_getroffen.png");
+}
+
+.ship_5_vertical_middel_3 {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte3.png");
+}
+
+.ship_5_vertical_middel_3_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_mitte3_getroffen.png");
+}
+
+.ship_5_vertical_front {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_vorne.png");
+}
+
+.ship_5_vertical_front_hit {
+    background-size: 100%;
+    background-image: url("images/ships/five/boot5_vertikal_vorne_getroffen.png");
+}
+
+
+
+
+
+
+
+
 
 .ship_vertical_front {
     background-size: 100%;
