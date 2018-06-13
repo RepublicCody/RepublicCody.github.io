@@ -3958,7 +3958,7 @@ if(typeof z!=="number")return H.w(z)
 if(x-w>=z){this.d.H()
 z=document
 this.d=new W.ay(new W.a3(z.querySelectorAll("tr"),[null]),!1,"click",[W.P]).ab(this.ged())
-x=""+this.a.b.A()+" Gegnerische Schiffe \xfcbrig"
+x=""+this.a.b.A()+" Schiffe \xfcbrig"
 J.O(z.querySelector("#text"),x)}}},"$1","gbi",2,0,4],
 d6:function(){var z,y,x
 z=this.b
