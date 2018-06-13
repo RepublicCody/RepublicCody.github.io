@@ -5,7 +5,7 @@
       "enemyShips": [2, 2, 3, 3, 4],
       "playerRocks": 3,
       "enemyRocks": 3,
-      "playerPowUps": 1,
+      "playerPowUps": 0,
       "enemyPowUps": 1,
       "enemyStrategy": 0
     }

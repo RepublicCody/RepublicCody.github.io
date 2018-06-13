@@ -62,7 +62,8 @@
         color: #FFFFFF;
         padding: 0.5%;
         margin: 0%;
-        border: 3px solid #080808;
+        border-bottom: 3px solid #080808;
+        border-top: 3px solid #080808;
         font-size: 200%;
         text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
         background: linear-gradient(top, #0b7499 0%, #626262 100%);
@@ -97,11 +98,21 @@
 
     /* Game Table */
     #gameTable {
+
         border-collapse: collapse;
         background-repeat: no-repeat;
         width: 100vw;
         height: 100vh;
         background-color: #626262;
+
+    }
+
+    tbody {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 
     #text {
@@ -113,12 +124,10 @@
         background: linear-gradient(top, #0b7499 0%, #626262 100%);
         background: -webkit-linear-gradient(top, #0b7499 0%, #626262 100%);
         font-size: 140%;
-        border-color: #FFFFFF;
         border: 1px solid black;
     }
 
     td {
-        border-color: #FFFFFF;
         background-position: center center;
         background-repeat: no-repeat;
         border: 1px solid black;
