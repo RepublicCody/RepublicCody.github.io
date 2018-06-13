@@ -4322,7 +4322,7 @@ z=document
 y=z.querySelector("#menu")
 x=y==null
 if(x)H.q(P.aw("object cannot be a num, string, bool, or null"))
-J.ee(P.dU(P.ca(y)),"scrollLeft","200")
+J.ee(P.dU(P.ca(y)),"scrollDown","200")
 y=this.b
 y.da()
 y.b4(this.a.b)
