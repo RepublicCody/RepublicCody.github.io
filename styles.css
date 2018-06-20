@@ -147,7 +147,7 @@
     #gameover {
         position: fixed;
         display: none;
-        top: 35%;
+        top: 30%;
         left: 7.5%;
         right: 0;
         bottom: 0;
@@ -155,7 +155,7 @@
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 2;
-        height: 30%;
+        height: 40%;
         width: 85%;
     }
 
@@ -231,16 +231,16 @@
 
     #messageBox {
         position: fixed;
-        top: 15vh;
-        left: 10%;
+        top: 10vh;
+        left: 7.5vw;
         right: 0;
         bottom: 0;
         border: 3px solid #FFFFFF;
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 2;
-        height: 70vh;
-        width: 80vw;
+        height: 80vh;
+        width: 85vw;
     }
 
     #messageLevel {
@@ -261,7 +261,7 @@
         position: absolute;
         text-align: center;
         padding: 1%;
-        top: 27.5vh;
+        top: 20vh;
         left: 50%;
         width: 70vw;
         font-size: 7vw;
@@ -275,7 +275,7 @@
         position: fixed;
         border: 3px solid #080808;
         /*font-size: 140%;*/
-        top: 75vh;
+        top: 85vh;
         left: 50vw;
         width: 40vw;
         margin: 0;
@@ -286,6 +286,200 @@
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+
+    #playerside{
+        position: fixed;
+        width: 40vw;
+        height: 40vh;
+        top: 60vh;
+        left: 30vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #enemyside{
+        position: fixed;
+        width: 40vw;
+        height: 40vh;
+        top: 60vh;
+        left: 70vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #playerdestroyer{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 5vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pdpicture{
+        position: fixed;
+        width: 30vw;
+        height: 10vh;
+        top: 5vh;
+        left: 15vw;
+        border: 1px solid #ffffff;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pdcount{
+        position: fixed;
+        width: 10vw;
+        height: 10vh;
+        top: 5vh;
+        left: 35vw;
+        border: 1px solid #a3262d;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #playersubmarine{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 15vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pspicture{
+        position: fixed;
+        width: 30vw;
+        height: 10vh;
+        top: 5vh;
+        left: 15vw;
+        border: 1px solid #ffffff;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pscount{
+        position: fixed;
+        width: 10vw;
+        height: 10vh;
+        top: 5vh;
+        left: 35vw;
+        border: 1px solid #a3262d;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #playerbattleship{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 25vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pbpicture{
+        position: fixed;
+        width: 30vw;
+        height: 10vh;
+        top: 5vh;
+        left: 15vw;
+        border: 1px solid #ffffff;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pbcount{
+        position: fixed;
+        width: 10vw;
+        height: 10vh;
+        top: 5vh;
+        left: 35vw;
+        border: 1px solid #a3262d;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #playercarrier{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 35vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pcpicture{
+        position: fixed;
+        width: 30vw;
+        height: 10vh;
+        top: 5vh;
+        left: 15vw;
+        border: 1px solid #ffffff;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #pccount{
+        position: fixed;
+        width: 10vw;
+        height: 10vh;
+        top: 5vh;
+        left: 35vw;
+        border: 1px solid #a3262d;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #enemydestroyer{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 5vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    #enemysubmarine{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 15vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    #enemybattleship{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 25vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    #enemycarrier{
+        position: fixed;
+        width: 40vw;
+        height: 10vh;
+        top: 35vh;
+        left: 20vw;
+        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
 
     .win {
         background: linear-gradient(top, #22a34f 0%, #196220 100%);
@@ -341,6 +535,10 @@
 
 .rock_1_hit {
     background-size: 100%;
+    -webkit-animation: rock_1_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: rock_1_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/rocks/insel_1_rot.png");
 }
 
@@ -351,6 +549,10 @@
 
 .rock_2_hit {
     background-size: 100%;
+    -webkit-animation: rock_2_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: rock_2_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/rocks/insel_2_rot.png");
 }
 
@@ -361,7 +563,36 @@
 
 .rock_3_hit {
     background-size: 100%;
+    -webkit-animation: rock_3_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: rock_3_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/rocks/insel_3_rot.png");
+}
+
+
+@keyframes rock_1_explosion {
+    0% {background-image: url("images/rocks/insel_1.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/rocks/insel_1_rot.png");background-size: 100%;}
+}
+
+@keyframes rock_2_explosion{
+    0% {background-image: url("images/rocks/insel_2.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/rocks/insel_2_rot.png");background-size: 100%;}
+}
+
+@keyframes rock_3_explosion{
+    0% {background-image: url("images/rocks/insel_3.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/rocks/insel_3_rot.png");background-size: 100%;}
 }
 
 /*water_fog*/
@@ -373,12 +604,11 @@
 
 .water_miss {
     background-size: 100%;
+    -webkit-animation: water_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: water_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/water_fog/wasser_getroffen_weiß.png");
-}
-
-.water_hit {
-    background-size: 100%;
-    background-image: url("images/water_fog/wasser_getroffen_rot.png");
 }
 
 .fog {
@@ -388,13 +618,46 @@
 
 .fog_miss {
     background-size: 100%;
+    -webkit-animation: fog_miss_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: fog_miss_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/water_fog/nebel_getroffen_weiß.png");
 }
 
 .fog_hit {
     background-size: 100%;
+    -webkit-animation: fog_hit_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: fog_hit_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/water_fog/nebel_getroffen_rot.png");
 }
+
+@keyframes fog_hit_explosion {
+    0% {background-image: url("images/water_fog/nebel.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/water_fog/nebel_getroffen_rot.png");background-size: 100%;}
+}
+
+@keyframes fog_miss_explosion{
+    0% {background-image: url("images/water_fog/nebel.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/water_fog/nebel_getroffen_weiß.png");background-size: 100%;}
+}
+
+@keyframes water_explosion{
+    0% {background-image: url("images/water_fog/wasser.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/water_fog/wasser_getroffen_weiß.png");background-size: 100%;}
+}
+
 
 /* powerups */
 
@@ -405,6 +668,10 @@
 
 .powerup_water_hit {
     background-size: 100%;
+    -webkit-animation: powerup_water_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: powerup_water_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/powerups/wasser_powerup_rot.png");
 }
 
@@ -415,9 +682,28 @@
 
 .powerup_fog_hit {
     background-size: 100%;
+    -webkit-animation: powerup_fog_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: powerup_fog_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/powerups/nebel_powerup_rot.png");
 }
 
+@keyframes powerup_water_explosion{
+    0% {background-image: url("images/powerups/wasser_powerup.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/powerups/wasser_powerup_rot.png");background-size: 100%;}
+}
+
+@keyframes powerup_fog_explosion{
+    0% {background-image: url("images/powerups/nebel_powerup.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/powerups/nebel_powerup_rot.png");background-size: 100%;}
+}
 /* ships */
 
 /* two */
@@ -428,6 +714,10 @@
 
 .ship_2_horizontal_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_2_horizontal_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_2_horizontal_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/two/boot2_horizontal_hinten_getroffen.png");
 }
 
@@ -438,6 +728,10 @@
 
 .ship_2_horizontal_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_2_horizontal_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_2_horizontal_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/two/boot2_horizontal_vorne_getroffen.png");
 }
 
@@ -448,6 +742,10 @@
 
 .ship_2_vertical_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_2_vertical_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_2_vertical_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/two/boot2_vertikal_hinten_getroffen.png");
 }
 
@@ -458,7 +756,43 @@
 
 .ship_2_vertical_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_2_vertical_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_2_vertical_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/two/boot2_vertikal_vorne_getroffen.png");
+}
+
+@keyframes ship_2_horizontal_back_explosion {
+    0% {background-image: url("images/ships/two/boot2_horizontal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/two/boot2_horizontal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_2_horizontal_front_explosion{
+    0% {background-image: url("images/ships/two/boot2_horizontal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/two/boot2_horizontal_vorne_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_2_vertical_back_explosion{
+    0% {background-image: url("images/ships/two/boot2_vertikal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/two/boot2_vertikal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_2_vertical_front_explosion{
+    0% {background-image: url("images/ships/two/boot2_vertikal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/two/boot2_vertikal_vorne_getroffen.png");background-size: 100%;}
 }
 
 /* three */
@@ -470,6 +804,10 @@
 
 .ship_3_horizontal_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_horizontal_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_horizontal_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_horizontal_hinten_getroffen.png");
 }
 
@@ -480,6 +818,10 @@
 
 .ship_3_horizontal_middel_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_horizontal_middel_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_horizontal_middel_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_horizontal_mitte_getroffen.png");
 }
 
@@ -490,6 +832,10 @@
 
 .ship_3_horizontal_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_horizontal_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_horizontal_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_horizontal_vorne_getroffen.png");
 }
 
@@ -500,6 +846,10 @@
 
 .ship_3_vertical_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_vertical_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_vertical_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_vertikal_hinten_getroffen.png");
 }
 
@@ -510,6 +860,10 @@
 
 .ship_3_vertical_middel_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_vertical_middel_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_vertical_middel_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_vertikal_mitte_getroffen.png");
 }
 
@@ -520,9 +874,60 @@
 
 .ship_3_vertical_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_3_vertical_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_3_vertical_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/three/uboot3_vertikal_vorne_getroffen.png");
 }
 
+@keyframes ship_3_horizontal_back_explosion {
+    0% {background-image: url("images/ships/three/uboot3_horizontal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_horizontal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_3_horizontal_middel_explosion {
+    0% {background-image: url("images/ships/three/uboot3_horizontal_mitte.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_horizontal_mitte_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_3_horizontal_front_explosion{
+    0% {background-image: url("images/ships/three/uboot3_horizontal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_horizontal_vorne_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_3_vertical_back_explosion{
+    0% {background-image: url("images/ships/three/uboot3_vertikal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_vertikal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_3_vertical_middel_explosion{
+    0% {background-image: url("images/ships/three/uboot3_vertikal_mitte.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_vertikal_mitte_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_3_vertical_front_explosion{
+    0% {background-image: url("images/ships/three/uboot3_vertikal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/three/uboot3_vertikal_vorne_getroffen.png");background-size: 100%;}
+}
 /* four */
 
 .ship_4_horizontal_back {
@@ -532,6 +937,10 @@
 
 .ship_4_horizontal_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_horizontal_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_horizontal_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_horizontal_hinten_getroffen.png");
 }
 
@@ -542,6 +951,10 @@
 
 .ship_4_horizontal_middel_1_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_horizontal_middel_1_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_horizontal_middel_1_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_horizontal_mitte1_getroffen.png");
 }
 
@@ -552,6 +965,10 @@
 
 .ship_4_horizontal_middel_2_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_horizontal_middel_2_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_horizontal_middel_2_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_horizontal_mitte2_getroffen.png");
 }
 
@@ -562,6 +979,10 @@
 
 .ship_4_horizontal_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_horizontal_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_horizontal_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_horizontal_vorne_getroffen.png");
 }
 
@@ -572,6 +993,10 @@
 
 .ship_4_vertical_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_vertical_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_vertical_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_vertikal_hinten_getroffen.png");
 }
 
@@ -582,6 +1007,10 @@
 
 .ship_4_vertical_middel_1_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_vertical_middel_1_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_vertical_middel_1_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_vertikal_mitte1_getroffen.png");
 }
 
@@ -592,6 +1021,10 @@
 
 .ship_4_vertical_middel_2_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_vertical_middel_2_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_vertical_middel_2_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_vertikal_mitte2_getroffen.png");
 }
 
@@ -602,7 +1035,75 @@
 
 .ship_4_vertical_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_4_vertical_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_4_vertical_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/four/boot4_vertikal_vorne_getroffen.png");
+}
+
+@keyframes ship_4_horizontal_back_explosion {
+    0% {background-image: url("images/ships/four/boot4_horizontal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_horizontal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_horizontal_middel_1_explosion {
+    0% {background-image: url("images/ships/four/boot4_horizontal_mitte1.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_horizontal_mitte1_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_horizontal_middel_2_explosion {
+    0% {background-image: url("images/ships/four/boot4_horizontal_mitte2.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_horizontal_mitte2_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_horizontal_front_explosion{
+    0% {background-image: url("images/ships/four/boot4_horizontal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_horizontal_vorne_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_vertical_back_explosion{
+    0% {background-image: url("images/ships/four/boot4_vertikal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_vertikal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_vertical_middel_1_explosion{
+    0% {background-image: url("images/ships/four/boot4_vertikal_mitte1.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_vertikal_mitte1_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_vertical_middel_2_explosion{
+    0% {background-image: url("images/ships/four/boot4_vertikal_mitte2.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_vertikal_mitte2_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_4_vertical_front_explosion{
+    0% {background-image: url("images/ships/four/boot4_vertikal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/four/boot4_vertikal_vorne_getroffen.png");background-size: 100%;}
 }
 
 /* five */
@@ -614,6 +1115,10 @@
 
 .ship_5_horizontal_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_horizontal_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_horizontal_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_horizontal_hinten_getroffen.png");
 }
 
@@ -624,6 +1129,10 @@
 
 .ship_5_horizontal_middel_1_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_horizontal_middel_1_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_horizontal_middel_1_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_horizontal_mitte1_getroffen.png");
 }
 
@@ -634,6 +1143,10 @@
 
 .ship_5_horizontal_middel_2_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_horizontal_middel_2_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_horizontal_middel_2_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_horizontal_mitte2_getroffen.png");
 }
 
@@ -644,6 +1157,10 @@
 
 .ship_5_horizontal_middel_3_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_horizontal_middel_3_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_horizontal_middel_3_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_horizontal_mitte3_getroffen.png");
 }
 
@@ -654,6 +1171,10 @@
 
 .ship_5_horizontal_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_horizontal_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_horizontal_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_horizontal_vorne_getroffen.png");
 }
 
@@ -664,6 +1185,10 @@
 
 .ship_5_vertical_back_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_vertical_back_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_vertical_back_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_vertikal_hinten_getroffen.png");
 }
 
@@ -674,6 +1199,10 @@
 
 .ship_5_vertical_middel_1_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_vertical_middel_1_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_vertical_middel_1_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_vertikal_mitte1_getroffen.png");
 }
 
@@ -684,6 +1213,10 @@
 
 .ship_5_vertical_middel_2_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_vertical_middel_2_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_vertical_middel_2_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_vertikal_mitte2_getroffen.png");
 }
 
@@ -694,6 +1227,10 @@
 
 .ship_5_vertical_middel_3_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_vertical_middel_3_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_vertical_middel_3_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_vertikal_mitte3_getroffen.png");
 }
 
@@ -704,5 +1241,89 @@
 
 .ship_5_vertical_front_hit {
     background-size: 100%;
+    -webkit-animation: ship_5_vertical_front_explosion 1s infinite;
+    -webkit-animation-iteration-count: 1;
+    animation: ship_5_vertical_front_explosion 1s infinite;
+    animation-iteration-count: 1;
     background-image: url("images/ships/five/boot5_vertikal_vorne_getroffen.png");
+}
+
+@keyframes ship_5_horizontal_back_explosion {
+    0% {background-image: url("images/ships/five/boot5_horizontal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_horizontal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_horizontal_middel_1_explosion {
+    0% {background-image: url("images/ships/five/boot5_horizontal_mitte1.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_horizontal_mitte1_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_horizontal_middel_2_explosion {
+    0% {background-image: url("images/ships/five/boot5_horizontal_mitte2.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_horizontal_mitte2_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_horizontal_middel_3_explosion {
+    0% {background-image: url("images/ships/five/boot5_horizontal_mitte3.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_horizontal_mitte3_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_horizontal_front_explosion{
+    0% {background-image: url("images/ships/five/boot5_horizontal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/nebel_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_horizontal_vorne_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_vertical_back_explosion{
+    0% {background-image: url("images/ships/five/boot5_vertikal_hinten.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_vertikal_hinten_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_vertical_middel_1_explosion{
+    0% {background-image: url("images/ships/five/boot5_vertikal_mitte1.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_vertikal_mitte1_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_vertical_middel_2_explosion{
+    0% {background-image: url("images/ships/five/boot5_vertikal_mitte2.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_vertikal_mitte2_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_vertical_middel_3_explosion{
+    0% {background-image: url("images/ships/five/boot5_vertikal_mitte3.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_vertikal_mitte3_getroffen.png");background-size: 100%;}
+}
+
+@keyframes ship_5_vertical_front_explosion{
+    0% {background-image: url("images/ships/five/boot5_vertikal_vorne.png");background-size: 100%;}
+    20% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    40% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    60% {background-image: url("images/water_fog/wasser_explosion.png");background-size: 100%;}
+    100% {background-image: url("images/ships/five/boot5_vertikal_vorne_getroffen.png");background-size: 100%;}
 }

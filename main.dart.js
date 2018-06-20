@@ -4366,7 +4366,7 @@ y=this.b
 y.dA()
 y.bk(this.a.b)
 J.A(y.b,'<div id="gameoverText"></div><br><input type="button" id="menuGameover" class="button" value="Menu"></input> <br><input type="button" id="nextGameover" class="button" value="Next Game"></input><input type="button" id="restartGameover" class="button" value="Restart"></input>')
-J.A(y.d,'<div id="messageBox"><div id="messageLevel"></div><div id="messageText">Place your ships in the lower field and take care of islands, they may look like ships</div><input type="button" id="messageNext" class="button" value="Play"></input></div>')
+J.A(y.d,'<div id="messageBox"><div id="messageLevel"></div><div id="messageText">Place your ships in the lower field and take care of islands, they may look like ships</div><div id="playerside"><div id="playerdestroyer"><div id="pdpicture"></div><div id="pdcount"></div></div><div id="playersubmarine"><div id="pspicture"></div><div id="pscount"></div></div><div id="playerbattleship"><div id="pbpicture"></div><div id="pbcount"></div></div><div id="playercarrier"><div id="pcpicture"></div><div id="pccount"></div></div></div><div id="enemyside"><div id="enemydestroyer"><div id="edpicture"></div><div id="edcount"></div></div><div id="enemysubmarine"><div id="espicture"></div><div id="escount"></div></div><div id="enemybattleship"><div id="ebpicture"></div><div id="ebcount"></div></div><div id="enemycarrier"><div id="ecpicture"></div><div id="eccount"></div></div></div><input type="button" id="messageNext" class="button" value="Play"></input></div>')
 y.bo()
 y=J.bC(z.querySelector("#messageNext"))
 this.f=W.ap(y.a,y.b,new B.eZ(this),!1,H.z(y,0))
@@ -4707,15 +4707,15 @@ v.fixed$length=Array
 u=H.q(v,x)
 for(v=u.length,t=0;t<b;++t){s=this.z
 if(typeof s!=="number")return H.t(s)
-if(w>=s){s=new B.a0(null,null,null,null,null)
+if(w>=s){s=new B.a0(null,null,0,null,null,null)
 s.a=w
 s.b=t
-s.d=!1
-s.c=!1}else{s=new B.a0(null,null,null,null,null)
+s.e=!1
+s.d=!1}else{s=new B.a0(null,null,0,null,null,null)
 s.a=w
 s.b=t
-s.d=!0
-s.c=!1}if(t>=v)return H.a(u,t)
+s.e=!0
+s.d=!1}if(t>=v)return H.a(u,t)
 u[t]=s}if(w>=y)return H.a(z,w)
 z[w]=u}return z},
 a5:function(a,b){var z,y,x
@@ -4949,22 +4949,22 @@ this.Q=!1},
 m:{
 fP:function(a,b){var z=new B.fO(null,null,null,null,null,null,null,null,null,null,null,null)
 z.e5(a,b)
-return z}}},a0:{"^":"b;b7:a<,aY:b<,a2:c<,ct:d<,aq:e<",
+return z}}},a0:{"^":"b;b7:a<,aY:b<,c,a2:d<,ct:e<,aq:f<",
 gw:function(){return this.a},
 gt:function(){return this.b},
-gal:function(){return this.c},
-gk:function(){return this.e},
-sk:function(a){this.e=a
+gal:function(){return this.d},
+gk:function(){return this.f},
+sk:function(a){this.f=a
 return a},
-gaw:function(){return this.d},
-saw:function(a){this.d=a
+gaw:function(){return this.e},
+saw:function(a){this.e=a
 return a},
-av:function(){var z,y
-z=this.e
+av:function(){var z,y;++this.c
+z=this.f
 y=J.j(z)
 if(!!y.$isaa)z.d0(this)
 else if(!!y.$isbh){z.eX()
-this.c=!0}else this.c=!0}},aP:{"^":"b;"},aa:{"^":"aP;b,c,d,e,l:f<,a",
+this.d=!0}else this.d=!0}},aP:{"^":"b;"},aa:{"^":"aP;b,c,d,e,l:f<,a",
 gB:function(){return this.c},
 bh:function(){var z,y
 for(z=0;y=this.f,z<y.length;++z)y[z].sk(this)},
@@ -4992,14 +4992,12 @@ fB:function(){var z,y
 for(z=0;y=this.f,z<y.length;++z)if(y[z].gal()===!0)return!0
 return!1},
 d0:function(a){var z,y,x
-a.c=!0
+a.d=!0
 for(z=!0,y=0;x=this.f,y<x.length;++y)if(x[y].gal()!==!0)z=!1
 if(z){this.cb()
 P.b6("Schiff versenkt")}},
 cb:function(){var z,y
-for(z=0;y=this.f,z<y.length;++z)if(y[z].gk()===this){y=this.f
-if(z>=y.length)return H.a(y,z)
-y[z].sk(null)}this.e=!0},
+for(z=this.f.length,y=0;y<z;++y);this.e=!0},
 de:function(a){var z,y,x,w,v,u,t
 z=H.q([],[B.a0])
 for(y=a>0,x=a<0,w=0;v=this.f,w<v.length;++w){u=v[w]
