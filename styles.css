@@ -10,6 +10,12 @@
         font-family: "Franklin Gothic Medium";
     }
 
+    div {
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0 -2px #080808, 2px 0 #080808, 0 2px #080808, -2px 0 #080808;
+    }
+
 @media all and (orientation:landscape) {
    #device {
         display: block;
@@ -231,7 +237,7 @@
 
     #messageBox {
         position: fixed;
-        top: 10vh;
+        top: 15vh;
         left: 7.5vw;
         right: 0;
         bottom: 0;
@@ -239,7 +245,7 @@
         border-radius: 20px;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 2;
-        height: 80vh;
+        height: 70vh;
         width: 85vw;
     }
 
@@ -247,7 +253,7 @@
         position: absolute;
         text-align: center;
         padding: 1%;
-        top: 7.5vh;
+        top: 6vh;
         left: 50%;
         width: 70vw;
         font-size: 14vw;
@@ -275,7 +281,7 @@
         position: fixed;
         border: 3px solid #080808;
         /*font-size: 140%;*/
-        top: 85vh;
+        top: 80vh;
         left: 50vw;
         width: 40vw;
         margin: 0;
@@ -287,12 +293,54 @@
         -ms-transform: translate(-50%, -50%);
     }
 
+    #match{
+        position: fixed;
+        width: 80vw;
+        height: 30vh;
+        top: 60vh;
+        left: 50vw;
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #player {
+        position: fixed;
+        width: 35vw;
+        height: 5vh;
+        top: 5vh;
+        left: 17.5vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #vs {
+        position: fixed;
+        width: 10vw;
+        height: 5vh;
+        top: 5vh;
+        left: 40vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #enemyplayer {
+        position: fixed;
+        width: 35vw;
+        height: 5vh;
+        top: 5vh;
+        left: 62.5vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
     #playerside{
         position: fixed;
         width: 40vw;
-        height: 40vh;
-        top: 60vh;
-        left: 30vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 20vw;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -300,9 +348,9 @@
     #enemyside{
         position: fixed;
         width: 40vw;
-        height: 40vh;
-        top: 60vh;
-        left: 70vw;
+        height: 20vh;
+        top: 17.5vh;
+        left: 60vw;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -310,10 +358,9 @@
     #playerdestroyer{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -321,10 +368,13 @@
     #pdpicture{
         position: fixed;
         width: 30vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 15vw;
-        border: 1px solid #ffffff;
+        background-size: 110%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/kanonenboot_blau.png");
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -332,10 +382,9 @@
     #pdcount{
         position: fixed;
         width: 10vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 4vh;
         left: 35vw;
-        border: 1px solid #a3262d;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -343,10 +392,9 @@
     #playersubmarine{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 15vh;
+        height: 5vh;
+        top: 7.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -354,10 +402,13 @@
     #pspicture{
         position: fixed;
         width: 30vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 15vw;
-        border: 1px solid #ffffff;
+        background-size: 110%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/uboot_blau.png");
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -365,10 +416,9 @@
     #pscount{
         position: fixed;
         width: 10vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 4vh;
         left: 35vw;
-        border: 1px solid #a3262d;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -376,10 +426,9 @@
     #playerbattleship{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 25vh;
+        height: 5vh;
+        top: 12.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -387,10 +436,13 @@
     #pbpicture{
         position: fixed;
         width: 30vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 15vw;
-        border: 1px solid #ffffff;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/schlachtschiff_blau.png");
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -398,10 +450,9 @@
     #pbcount{
         position: fixed;
         width: 10vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 4vh;
         left: 35vw;
-        border: 1px solid #a3262d;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -409,10 +460,9 @@
     #playercarrier{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 35vh;
+        height: 5vh;
+        top: 17.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -420,10 +470,13 @@
     #pcpicture{
         position: fixed;
         width: 30vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 15vw;
-        border: 1px solid #ffffff;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/flugzeugträger_blau.png");
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
@@ -431,51 +484,148 @@
     #pccount{
         position: fixed;
         width: 10vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 4vh;
         left: 35vw;
-        border: 1px solid #a3262d;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
 
+
+
+
     #enemydestroyer{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 5vh;
+        height: 5vh;
+        top: 2.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+
+    #edpicture{
+        position: fixed;
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/kanonenboot_rot.png");
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+}
+
+    #edcount{
+        position: fixed;
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
     #enemysubmarine{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 15vh;
+        height: 5vh;
+        top: 7.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+
+    #espicture{
+        position: fixed;
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 110%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/uboot_rot.png");
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #escount{
+        position: fixed;
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
     #enemybattleship{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 25vh;
+        height: 5vh;
+        top: 12.5vh;
         left: 20vw;
-        border: 1px solid #080808;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
+
+    #ebpicture{
+        position: fixed;
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/schlachtschiff_rot.png");
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #ebcount{
+        position: fixed;
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
     #enemycarrier{
         position: fixed;
         width: 40vw;
-        height: 10vh;
-        top: 35vh;
+        height: 5vh;
+        top: 17.5vh;
         left: 20vw;
-        border: 1px solid #080808;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #ecpicture{
+        position: fixed;
+        width: 30vw;
+        height: 5vh;
+        top: 2.5vh;
+        left: 15vw;
+        background-size: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("images/ship_side/flugzeugträger_rot.png");
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    #eccount{
+        position: fixed;
+        width: 10vw;
+        height: 5vh;
+        top: 4vh;
+        left: 35vw;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     }
