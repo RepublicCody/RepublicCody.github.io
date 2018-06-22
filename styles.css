@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
     body, html {
-        height: 100vh;
+        /*height: 100vh;*/
         max-width: 600px;
         margin: 0;
         padding: 0;
