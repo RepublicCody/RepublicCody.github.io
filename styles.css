@@ -146,6 +146,16 @@
         z-index: 2;
     }
 
+    #exitfullscreenbutton{
+        display: none;
+        background-size: 60%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor:pointer;
+        background-image: url("images/exit_fullscreen.png");
+        z-index: 2;
+    }
+
     #fullscreendiv{
         z-index: 1;
         background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
