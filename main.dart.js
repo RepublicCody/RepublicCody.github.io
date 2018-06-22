@@ -5493,7 +5493,7 @@ v.width=x
 v=z.querySelector("#back").style
 v.height=w
 v=z.querySelector("body").style
-u=J.S(window.innerWidth)+"px"
+u=J.S(window.innerHeight)+"px"
 v.height=u
 for(v=y+3,t=0,s=0;s<9;++s)t+=v
 z=z.querySelector("tbody").style
