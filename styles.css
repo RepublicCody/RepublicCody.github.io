@@ -43,6 +43,11 @@
     }
 }
 
+    img{
+        display: none;
+    }
+
+
     /* Device */
     #device {
         position: fixed;
