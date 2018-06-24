@@ -4430,6 +4430,7 @@ x.bl(this.a.b)
 J.q(x.b,'<div id="gameoverText"></div><br><input type="button" id="menuGameover" class="button" value="Menu"></input> <br><input type="button" id="nextGameover" class="button" value="Next Game"></input><input type="button" id="restartGameover" class="button" value="Restart"></input>')
 J.q(x.d,'<div id="messageBox"><div id="messageLevel"></div><div id="messageText">Place your ships in the lower field and take care of islands, they may look like ships</div><div id="match"><div id="player">Player</div><div id="vs">VS</div><div id="enemyplayer"></div><div id="playerside"><div id="playerdestroyer"><div id="pdpicture"></div><div id="pdcount"></div></div><div id="playersubmarine"><div id="pspicture"></div><div id="pscount"></div></div><div id="playerbattleship"><div id="pbpicture"></div><div id="pbcount"></div></div><div id="playercarrier"><div id="pcpicture"></div><div id="pccount"></div></div></div><div id="enemyside"><div id="enemydestroyer"><div id="edpicture"></div><div id="edcount"></div></div><div id="enemysubmarine"><div id="espicture"></div><div id="escount"></div></div><div id="enemybattleship"><div id="ebpicture"></div><div id="ebcount"></div></div><div id="enemycarrier"><div id="ecpicture"></div><div id="eccount"></div></div></div></div><input type="button" id="messageNext" class="button" value="Play"></input></div>')
 J.q(x.e,"<input type='button' id='deviceButton' value='Ignore Device Message'></input>")
+J.q(x.f,'<div id="animatedmessagetext" value="Ship sunk"></div>')
 x.bp()
 W.Z(window,"resize",new B.f0(this),!1,W.P)
 x=J.ax(z.querySelector("#messageNext"))
@@ -4454,7 +4455,7 @@ z.a=B.cK(z)
 z.a=B.cK(z)
 z.be()
 y=document
-y=new B.eX(z,new B.f6(y.querySelector("#menu"),y.querySelector("#gameover"),y.querySelector("#gameTable"),y.querySelector("#message"),y.querySelector("#device"),null),null,null,null,null,null,null,null,0)
+y=new B.eX(z,new B.f6(y.querySelector("#menu"),y.querySelector("#gameover"),y.querySelector("#gameTable"),y.querySelector("#message"),y.querySelector("#device"),y.querySelector("#animatedmessage"),null),null,null,null,null,null,null,null,0)
 y.e8()
 return y}}},f0:{"^":"e:0;a",
 $1:function(a){return this.a.b.d4()}},f1:{"^":"e:4;a",
@@ -5310,7 +5311,7 @@ m:{
 he:function(a,b){var z=new B.bq(null,null,null)
 z.a=a
 z.ec(a,b)
-return z}}},f6:{"^":"b;a,b,c,d,e,f",
+return z}}},f6:{"^":"b;a,b,c,d,e,f,r",
 bl:function(a){var z,y,x,w,v,u,t,s
 z="<tbody><tr><th colspan='"+(a.y-1)+"' id='text'></th> <th id='back' class='back'></th></tr>"
 for(y=0;y<a.x;++y){z+="<tr>"
@@ -5329,8 +5330,8 @@ t=t[y]
 if(x>=t.length)return H.a(t,x)
 z+=w+this.d2(t[x])+"'><div id='"+u+"'></div></td>";++x}z+="</tr>"}J.q(this.c,z+"</tbody>")
 this.d4()
-this.f=H.r(new Array(a.x),[[P.i,W.p]])
-for(w=[W.p],y=0;y<a.x;++y){t=this.f
+this.r=H.r(new Array(a.x),[[P.i,W.p]])
+for(w=[W.p],y=0;y<a.x;++y){t=this.r
 s=H.r([],w)
 if(y>=t.length)return H.a(t,y)
 t[y]=s
@@ -5338,7 +5339,7 @@ x=0
 while(!0){t=a.a
 if(y>=t.length)return H.a(t,y)
 if(!(x<t[y].length))break
-t=this.f
+t=this.r
 if(y>=t.length)return H.a(t,y)
 t=t[y]
 s="#field_"+y+"_"+x
@@ -5346,8 +5347,8 @@ t.push(document.querySelector(s));++x}}},
 dF:function(){var z,y,x,w
 for(z='<div id="menu_head">Warships</div><br>',y=1,x=1;x<5;++x)for(w=1;w<=2;++w){z+='<input type="button" id="level_'+y+'" class="button" value="Level '+y+'"></input>';++y}J.q(this.a,z+('<input type="button" id="level_'+y+'" class="button" value="Level '+y+'"></input>')+'<input type="button" id="zufall" class="button" value="Random"></input><input type="button" id="fullscreenbutton" class="fullscreen"></input><input type="button" id="exitfullscreenbutton" class="fullscreen"></input><div id="fullscreendiv" class="fullscreen"></div>')},
 a9:function(a){var z,y,x,w
-for(z=0;z<this.f.length;++z){y=0
-while(!0){x=this.f
+for(z=0;z<this.r.length;++z){y=0
+while(!0){x=this.r
 if(z>=x.length)return H.a(x,z)
 x=x[z]
 if(!(y<x.length))break
