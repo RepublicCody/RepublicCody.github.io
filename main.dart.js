@@ -4442,7 +4442,7 @@ y.display="none"
 y=z.r.style
 y.display="block"
 z.bd(a)
-z.aT("Placing a Ship","shipbuilder_center","PowerUps")}else if(a===2){z=this.b
+z.aT("Placing a Ship","shipbuilder_center","Place your ships in the lower field. You and the enemy can place them beyond the left and the right border.")}else if(a===2){z=this.b
 z.bd(a)
 z.aT("Island","rock_2","Islands are obstacles which block the way of your ships. If you attack one on the enemy's territory, it might look like you've hit a ship. Don't be fooled.")}else if(a===3){z=this.b
 z.bd(a)
