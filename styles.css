@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body, html {
-    /*height: 100vh;*/
+    height: 100vh;
     max-width: 600px;
     margin: 0;
     padding: 0;
@@ -481,7 +481,7 @@ div {
 
     #instructionButton {
         width: 42.5%;
-        top: 80vh;
+        top: 92.5vh;
         left: 50%;
         font-size: 7vw;
     }
@@ -489,7 +489,7 @@ div {
     .fullscreen {
         width: 14vw;
         height: 14vw;
-        top: 80vh;
+        top: 92.5vh;
         left: 85%;
     }
 
