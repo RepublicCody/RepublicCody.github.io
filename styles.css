@@ -63,7 +63,7 @@ div {
 
     #instructionButton {
         width: 42.5%;
-        top: 90vh;
+        top: 90%;
         left: 50%;
         font-size: 2vw;
     }
@@ -71,7 +71,7 @@ div {
     .fullscreen {
         width: 6vw;
         height: 6vw;
-        top: 90vh;
+        top: 90%;
         left: 85%;
     }
 
