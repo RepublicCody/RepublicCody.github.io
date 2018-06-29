@@ -489,7 +489,7 @@ div {
     .fullscreen {
         width: 14vw;
         height: 14vw;
-        top: 92.5vh;
+        top: 90%;
         left: 85%;
     }
 
@@ -948,7 +948,7 @@ div {
 }
 
 .fullscreen {
-    position: absolute;
+    position: fixed;
     margin: 0;
     border-radius: 50%;
     background-color: Transparent;
