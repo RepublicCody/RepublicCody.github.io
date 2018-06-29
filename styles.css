@@ -934,7 +934,7 @@ div {
 }
 
 #instructionButton {
-    position: fixed;
+    position: absolute;
     color: #FFFFFF;
     padding: 1%;
     margin: 0;
@@ -948,7 +948,7 @@ div {
 }
 
 .fullscreen {
-    position: fixed;
+    position: absolute;
     margin: 0;
     border-radius: 50%;
     background-color: Transparent;
